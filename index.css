@@ -7,6 +7,23 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.errBox{
+    display: none;
+    color: red;
+    margin-top: -6%;
+    height: 4.4vh;
+}
+
+button[type="submit"] {
+    margin-top:5%;
+}
+
+.errMess {
+    color:red;
+    font-size: 0.5em;
+}
+
 @media only screen and (max-width:950px) {
     body {
         padding-top:10%;
@@ -18,6 +35,15 @@ body {
         justify-content: center;
         box-sizing: content-box;
         align-items: center;
+    }
+    .colFlex {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .colFlexBox {
+        width: 100%;
     }
     h1 {
         font-size: xx-large;
@@ -57,7 +83,7 @@ body {
     input {
         display: block;
         margin:4% 0;
-        width: 90%;
+        width: 100%;
         padding: 3% 5%;
         box-sizing: content-box;
         outline: none;
@@ -76,6 +102,15 @@ body {
 }
 
 @media only screen and (min-width: 950px) {
+    .colFlex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .colFlexBox {
+        width: 100%;
+    }
     .container {
         display: flex;
         flex-direction: row;
@@ -137,13 +172,13 @@ body {
     }
 }
 .containerCol {
-    padding: 3%;
+    padding: auto;
     display: flex;
     flex-direction: column;
     box-sizing: content-box;
 }
 .flexContCol { 
-    margin:3%;
+    margin:auto;
     border-radius: 5px;
 }
 input:focus {
